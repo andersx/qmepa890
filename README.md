@@ -8,6 +8,7 @@ A bunch of molecules at two different protonation state. Nearly all molecules ar
 ### Level of theory:
 All structures are optimized at the PBE0/def2-TZVP level of theory in ORCA.
 All energies are calculated at the PBE0/def2-TZVP level as well. No RI etc approximations were used.
+PM6 heats-of-formation are calculated in MOPAC using the COSMO implicit solvent model with a dielectric constant of `EPS=78.4`.
 
 ### Nomenclature of XYZ files:
 
@@ -24,6 +25,8 @@ The CSV file contains the following information
 6. Gas-phase energy of protonated molecule
 7. Energy of neutral molecule using SMD implicit solvent model
 8. Energy of protonated molecule using SMD implicit solvent model
+9. PM6 heat-of-formation of neutral molecule using COSMO implicit solvent model
+10. PM6 heat-of-formation of protonated molecule using COSMO implicit solvent model
 
 ### Units:
 Energies are given in units of **kcal/mol**! The XYZ files contain structures contain the coordinates in units of in Ångstrøm.
